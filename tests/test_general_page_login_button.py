@@ -59,7 +59,3 @@ class TestStellarBurgersLoginButtonInGeneral: # класс для тестиро
         assert 'account/profile/' not in current_url_before_login, 'login' not in current_url_before_login
 
         driver_general.quit()
-
-
-
-

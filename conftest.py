@@ -1,4 +1,4 @@
-pipimport pytest
+import pytest
 from selenium import webdriver
 import settings
 

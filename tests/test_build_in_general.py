@@ -30,3 +30,4 @@ class TestIngridients: # класс для тестирования вкладо
         assert 'current' in fillings_section.get_attribute('class')
 
         driver_general.quit()
+

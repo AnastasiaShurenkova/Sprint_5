@@ -20,3 +20,4 @@ class TestStellarBurgersRegistrationCorrectPassword: # класс для тес�
 
 
         driver_registration.quit()
+

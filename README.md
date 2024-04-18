@@ -16,4 +16,4 @@ test_transition_to_personal_account.py - Проверка возможности
 
 random_mail.py - генератор рандомных email
 locators.py - локаторы
-conftest.py - фикстуры 
+conftest.py - фикстуры
