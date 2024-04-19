@@ -20,7 +20,7 @@ class TestStellarBurgersTransitionToBuilderAndLogo:
         assert 'login' not in current_url_before_login
 
 
-        driver_general.quit()
+
 
     def test_transition_to_logo(self, driver_general): # метод для тестирования клика по логотипу находясь в личном кабинете
         wait = WebDriverWait(driver_general, 5)
@@ -37,4 +37,3 @@ class TestStellarBurgersTransitionToBuilderAndLogo:
 
         assert 'login' not in current_url_before_login
 
-        driver_general.quit()

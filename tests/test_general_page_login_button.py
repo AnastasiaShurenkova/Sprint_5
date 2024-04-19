@@ -17,7 +17,7 @@ class TestStellarBurgersLoginButtonInGeneral: # класс для тестиро
 
 
 
-        driver_general.quit()
+
 
     def test_cabinet_button_in_general(self, driver_general): # метод для тестирования входа через кнопку Личный Кабинет
         driver_general.find_element(*StellarBurgers.CABINET_BUTTON_IN_GENERAL).click()
@@ -30,7 +30,7 @@ class TestStellarBurgersLoginButtonInGeneral: # класс для тестиро
 
         assert 'account/profile/' not in current_url_before_login, 'login' not in current_url_before_login
 
-        driver_general.quit()
+
 
     def test_login_from_registration_page(self, driver_registration): # метод для тестирования входа в аккаунт через кнопку Войти в форме регистрации
         driver_registration.find_element(*StellarBurgers.LOGIN_IN_REGISTRATION_WINDOW).click()
@@ -43,7 +43,7 @@ class TestStellarBurgersLoginButtonInGeneral: # класс для тестиро
 
         assert 'account/profile/' not in current_url_before_login, 'login' not in current_url_before_login
 
-        driver_registration.quit()
+
 
     def test_login_from_password_page(self, driver_general): # метод для тестирования входа в аккант со страницы восстановления пароля
         driver_general.find_element(*StellarBurgers.LOGIN_BUTTON_IN_GENERAL).click()
@@ -58,4 +58,4 @@ class TestStellarBurgersLoginButtonInGeneral: # класс для тестиро
 
         assert 'account/profile/' not in current_url_before_login, 'login' not in current_url_before_login
 
-        driver_general.quit()
+

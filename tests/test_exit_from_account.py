@@ -21,4 +21,3 @@ class TestStellarBurgersExitFromAccount: # класс для тестирова�
         assert 'account/profile' not in current_url_before_login
 
 
-        driver_general.quit()

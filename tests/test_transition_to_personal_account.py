@@ -20,4 +20,4 @@ class TestStellarBurgersTransitionToPersonalAccount:
 
 
 
-        driver_general.quit()
+

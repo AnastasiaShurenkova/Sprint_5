@@ -9,4 +9,4 @@ class TestStellarBurgersRegistrationNotCorrectPassword: # класс для те
 
         assert driver_registration.find_element(*StellarBurgers.PASSWORD_ERROR).is_displayed()
 
-        driver_registration.quit()
+

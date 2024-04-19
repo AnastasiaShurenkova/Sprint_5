@@ -19,5 +19,4 @@ class TestStellarBurgersRegistrationCorrectPassword: # класс для тес�
         assert 'login' in current_url_before_login
 
 
-        driver_registration.quit()
 

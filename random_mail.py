@@ -18,3 +18,4 @@ def generate_email():
 
 
 random_email = generate_email()
+

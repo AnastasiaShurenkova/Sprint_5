@@ -11,7 +11,7 @@ class TestIngridients: # класс для тестирования вкладо
 
         assert 'current' in rolls_section.get_attribute('class')
 
-        driver_general.quit()
+
 
     def test_sauces_page(self, driver_general):
         driver_general.find_element(*StellarBurgers.SAUCES).click()
@@ -20,7 +20,7 @@ class TestIngridients: # класс для тестирования вкладо
 
         assert 'current' in sauces_section.get_attribute('class')
 
-        driver_general.quit()
+
 
     def test_fillings_page(self, driver_general):
         driver_general.find_element(*StellarBurgers.FILLINGS).click()
@@ -29,5 +29,5 @@ class TestIngridients: # класс для тестирования вкладо
 
         assert 'current' in fillings_section.get_attribute('class')
 
-        driver_general.quit()
+
 
