@@ -2,7 +2,7 @@ from conftest import driver
 from locators import StellarBurgers
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
-from random_mail import random_email
+from helpers import random_email
 import settings
 
 class TestStellarBurgersRegistrationCorrectPassword: # класс для тестирования регистрации
