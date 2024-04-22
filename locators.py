@@ -26,3 +26,4 @@ class StellarBurgers:
     FILLINGS_SECTION = (By.XPATH, ".//span[text() = 'Начинки']/parent::div") # Поле "Начинки"
     BUTTON_CHECKOUT = (By.XPATH, ".//button[text() = 'Оформить заказ']") # Кнопка "Оформить заказ"
     ACCOUNT_TEXT = (By.XPATH, ".//p[text() = 'В этом разделе вы можете изменить свои персональные данные']")
+

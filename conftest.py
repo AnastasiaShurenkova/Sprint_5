@@ -3,21 +3,11 @@ from selenium import webdriver
 import settings
 
 
-@pytest.fixture(scope='function') # фикстура, когда необходимо зайти и протестировать функциональность на странице регистрации
-def driver_registration():
+@pytest.fixture(scope='function')
+def driver():
     chrome_driver = webdriver.Chrome()
-    chrome_driver.get(settings.URL_registration)
+    chrome_driver.get(settings.URL)
 
-    return chrome_driver
-
-    chrome_driver.quit()
-
-@pytest.fixture(scope='function') # фикстура, когда необходимо тестировать, начиная с главной страницы
-def driver_general():
-    chrome_driver = webdriver.Chrome()
-    chrome_driver.get(settings.URL_general)
-
-    return chrome_driver
-
+    yield chrome_driver
     chrome_driver.quit()
 
