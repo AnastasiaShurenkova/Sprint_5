@@ -9,7 +9,8 @@ def driver_registration():
     chrome_driver.get(settings.URL_registration)
 
     return chrome_driver
-    driver_registration.quit()
+
+    chrome_driver.quit()
 
 @pytest.fixture(scope='function') # фикстура, когда необходимо тестировать, начиная с главной страницы
 def driver_general():
@@ -17,5 +18,6 @@ def driver_general():
     chrome_driver.get(settings.URL_general)
 
     return chrome_driver
-    driver_general.quit()
+
+    chrome_driver.quit()
 
